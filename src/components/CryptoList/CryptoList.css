@@ -1,0 +1,4 @@
+#subscribed-coins {
+    display: flex;
+    flex-wrap: wrap;
+}

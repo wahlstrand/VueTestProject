@@ -1,0 +1,63 @@
+.coin {
+    cursor: pointer;
+    border-radius: 2px;
+    background-color: rgba(255, 255, 255, .5);
+    position: relative;
+    width: 175px;
+    height: 70px;
+    padding: 10px;
+    margin: 20px 20px 0 20px;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 200ms ease-in-out;
+}
+
+.coin:hover {
+    box-shadow: 0px 6px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+.coin span {
+    display: block;
+}
+
+.coin .name {
+    font-weight: 400;
+    font-size: 14px;
+    color: #333;
+}
+
+.coin .symbol {
+    font-size: 12px;
+    color: #444;
+}
+
+.coin .price {
+    font-weight: 400;
+    font-size: 24px;
+    color: white;
+    text-align: right;
+    position: absolute;
+    bottom: 5px;
+    right: 12px;
+}
+
+/*
+The deletion X when hovering the coin
+*/
+.coin:before {
+    content: "\2715";
+    text-align: center;
+    font-size: 80px;
+    line-height: 98px;
+    color: white;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: opacity 250ms linear;
+}
+
+.coin:hover:before {
+    opacity: .35;
+}
